@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogin.</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body onload="onInit()">
+    <!-- Header -->
+
+    <div class="main-screen" onclick="toggleMenu()"></div>
+    <header class="main-header">
+      <div class="header-container container flex space-between align-center">
+        <div class="logo">Blogin</div>
+        <ul class="main-nav flex clean-list">
+          <li>
+            <a class="flex justify-center align-center" href="#">Journal</a>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a class="flex justify-center align-center" href="#">About</a>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+          </li>
+          <li><a class="flex justify-center align-center" href="#">Work</a></li>
+          <li>
+            <a class="flex justify-center align-center" href="#">Contact</a>
+          </li>
+        </ul>
+        <div onclick="toggleMenu(this)" class="nav-icon flex">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+
+    <main class="main-content container">
+      <div class="card-container flex flex-column xontainer">
+        <div class="card flex">
+          <img class="card-image" src="img/Layer 2.png" />
+          <div class="card-content flex-column space-between">
+            <h2 class="card-title">
+              Duis aute irure dolor in henderit in voluptate.
+            </h2>
+            <p class="card-text">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia
+              deserunt mollit anim id est laborum. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur...
+            </p>
+            <p class="card-text">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur...
+            </p>
+
+            <button onclick="onOpenModal()" class="card-btn">
+              Continue Reading
+            </button>
+          </div>
+        </div>
+        <div class="card flex">
+          <img class="card-image" src="img/Layer_3.png" />
+          <div class="card-content flex-column space-between">
+            <h2 class="card-title">
+              Duis aute irure dolor in henderit in voluptate.
+            </h2>
+            <p class="card-text">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia
+              deserunt mollit anim id est laborum.
+            </p>
+            <p class="card-text">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur...
+            </p>
+            <button onclick="onOpenModal()" class="card-btn">
+              Continue Reading
+            </button>
+          </div>
+        </div>
+        <div class="card flex">
+          <img class="card-image" src="img/Layer_4.png" />
+          <div class="card-content flex-column space-between">
+            <h2 class="card-title">
+              Duis aute irure dolor in henderit in voluptate.
+            </h2>
+            <p class="card-text">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia
+              deserunt mollit anim id est laborum.
+            </p>
+            <p class="card-text">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur...
+            </p>
+            <button onclick="onOpenModal()" class="card-btn">
+              Continue Reading
+            </button>
+          </div>
+        </div>
+        <div class="page-navigation flex space-between">
+          <h3 class="prev">Previous</h3>
+          <h3 class="next">Next</h3>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="main-footer flex flex-column justify-center">
+      <div
+        class="footer-container container flex flex-column justify-center align-center"
+      >
+        <div class="logo">Blogin</div>
+        <small
+          >© 2014 Blogin.com - All Rights Reserved - Find more free Templates at
+          Pixelhint.com</small
+        >
+        <ul class="social-nav flex clean-list">
+          <li class="facebook"><a class="facebook-font fa" href="#"></a></li>
+          <li class="twitter"><a class="twitter-font fa" href="#"></a></li>
+          <li class="instagram"><a class="instagram-font fa" href="#"></a></li>
+          <li class="pinterest"><a class="pinterest-font fa" href="#"></a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- MODAL -->
+
+    <section class="modal-container">
+      <div class="modal">
+        <h2 class="card-title">
+          Duis aute irure dolor in henderit in voluptate.
+        </h2>
+        <p class="card-text">
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia
+          deserunt mollit anim id est laborum.
+        </p>
+        <p class="card-text">
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur...
+        </p>
+        <button onclick="onCloseModal()" class="btn-modal-close">Close</button>
+      </div>
+    </section>
+
+    <script src="../main.js"></script>
+  </body>
+</html>
