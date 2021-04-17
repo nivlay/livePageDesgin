@@ -63,6 +63,8 @@ h2 {
     font-size: 1.75rem;
     color: #4f4e4e;
     text-transform: uppercase;
+    z-index: 1;
+
 }
 
 h3 {
@@ -87,6 +89,9 @@ button {
 .main-header {
     background-color: #292929;
     box-shadow: -1px 0 0 #1d1d1d, inset 0 -6px 0 1d1d1d;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .logo {
@@ -145,7 +150,6 @@ button {
     position: absolute;
     background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
 }
 
 .dropdown-content a {
@@ -175,17 +179,15 @@ button {
     align-items: center;
 }
 
-.card:not(:last-child) {
-    margin-bottom: 5em;
+.card {
+    margin-top: 5em;
 }
+
 
 .card-content {
     padding: 1rem 2em 0 2em;
 }
 
-/* .card-content p:last-of-type {
-    flex: 1;
-} */
 
 .card-btn {
     height: 2.5rem;
@@ -220,6 +222,7 @@ button {
     color: #818181;
     text-transform: uppercase;
     padding: 0.875rem 0.875rem;
+    margin-top: 5em;
 }
 
 .prev::before {
@@ -240,6 +243,10 @@ button {
     color: #292929;
     margin-bottom: 2.6rem;
     margin-top: 1rem;
+}
+
+small span {
+    font-family: lato-bold;
 }
 
 .social-nav>li {
